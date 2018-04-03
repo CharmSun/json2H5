@@ -1,0 +1,24 @@
+{
+  "name": "json2h5",
+  "version": "1.0.0",
+  "description": "A H5 runtime which can render page json data to html5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharmSun/json2H5.git"
+  },
+  "keywords": [
+    "h5",
+    "runtime",
+    "json"
+  ],
+  "author": "CharmSun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharmSun/json2H5/issues"
+  },
+  "homepage": "https://github.com/CharmSun/json2H5#readme"
+}
