@@ -1,0 +1,252 @@
+{
+  "attributes": {
+    "loadingMode": "lazyload"
+  },
+  "backStage": {
+    "attributes": {
+      "gravityLock": "notlock"
+    },
+    "events": []
+  },
+  "frontStage": {
+    "attributes": {
+      "gravityLock": "notlock"
+    },
+    "events": []
+  },
+  "loadingPage": {
+    "attributes": {
+      "gravityLock": "notlock"
+    },
+    "events": []
+  },
+  "pages": [
+    {
+      "attributes": {
+        "background": "#FFF",
+        "gravityLock": "notlock"
+      },
+      "components": [
+        {
+          "type": "image",
+          "name": "ab",
+          "surface": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 238,
+            "borderSize": 1,
+            "borderColor": "black",
+            "fill": "transparent"
+          },
+          "attributes": {
+            "src": "https://imgsa.baidu.com/fex/pic/item/8601a18b87d6277f8bedf23724381f30e824fcc6.jpg",
+            "size": 0,
+            "filename": "",
+            "touchevent": "false",
+            "keepDefault": "false",
+            "translateX": 0,
+            "translateY": 0,
+            "scale": 1,
+            "stroke": "black",
+            "strokeWidth": 0,
+            "strokeType": "solid",
+            "cornerRadius": 0
+          },
+          "animations": [
+            {
+              "name": "bounce",
+              "duration": 2.9,
+              "delay": 0.2
+            }
+          ],
+          "events": [
+            {
+              "actionType": "link",
+              "type": "tap",
+              "control": {
+                "target": "",
+                "action": {
+                  "id": "",
+                  "args": []
+                }
+              },
+              "link": {
+                "prefix": "http://",
+                "url": "www.sogou.com"
+              },
+              "download": {
+                "ios": "",
+                "android": ""
+              }
+            }
+          ]
+        },
+        {
+          "type": "rect",
+          "surface": {
+            "x": 0,
+            "y": 437,
+            "width": 401,
+            "height": 213,
+            "locked": true,
+            "borderSize": 1,
+            "borderColor": "black",
+            "fill": "transparent"
+          },
+          "attributes": {
+            "fill": "#804000",
+            "stroke": "#888",
+            "strokeWidth": 0,
+            "strokeType": "solid",
+            "cornerRadius": 0
+          },
+          "events": []
+        },
+        {
+          "type": "video",
+          "surface": {
+            "x": 0,
+            "y": 238,
+            "width": 400,
+            "height": 199,
+            "background": "#000000",
+            "borderSize": 1,
+            "borderColor": "black",
+            "fill": "transparent"
+          },
+          "attributes": {
+            "url": "http://legend.cdn.bcebos.com/1681602ae601608f9d7d16f9dfe886711522141760487.mp4",
+            "cover": "https://imgsa.baidu.com/fex/pic/item/b999a9014c086e0618e2043b0e087bf40ad1cb73.jpg",
+            "playicon": "https://gss0.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/doc/pic/item/622762d0f703918f67e968e8563d269759eec4dc.jpg",
+            "pauseicon": "",
+            "tapToPause": "true",
+            "tips": "false",
+            "auto": "false",
+            "loop": "false",
+            "act": "none",
+            "page": 1
+          },
+          "events": []
+        },
+        {
+          "type": "label",
+          "surface": {
+            "x": 118,
+            "y": 476,
+            "width": 185,
+            "height": 59,
+            "borderSize": 1,
+            "borderColor": "black",
+            "fill": "transparent"
+          },
+          "attributes": {
+            "html": "<p style=\"text-align:center; line-height:2.1;\">\u6b22\u8fce\u5149\u4e34\uff01</p>",
+            "fonts": [],
+            "verticalAlign": "top",
+            "shadow": "true",
+            "shadowColor": "gray",
+            "shadowOffsetX": 3,
+            "shadowOffsetY": 3,
+            "shadowBlur": 0,
+            "allowScroll": "false"
+          },
+          "animations": [
+            {
+              "name": "heartbeat"
+            }
+          ],
+          "events": []
+        },
+        {
+          "type": "panel",
+          "surface": {
+            "x": 141,
+            "y": 543,
+            "width": 132,
+            "height": 71,
+            "borderSize": 1,
+            "borderColor": "black",
+            "fill": "transparent"
+          },
+          "attributes": {
+            "components": [
+              {
+                "type": "circle",
+                "surface": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 132,
+                  "height": 71,
+                  "borderSize": 1,
+                  "borderColor": "black",
+                  "fill": "transparent"
+                },
+                "attributes": {
+                  "fill": "#97c6ec",
+                  "stroke": "#25313e",
+                  "strokeWidth": 2,
+                  "strokeType": "solid"
+                },
+                "events": []
+              },
+              {
+                "type": "label",
+                "surface": {
+                  "x": 24,
+                  "y": 18,
+                  "width": 82,
+                  "height": 38,
+                  "borderSize": 1,
+                  "borderColor": "black",
+                  "fill": "transparent"
+                },
+                "attributes": {
+                  "html": "<p style=\"text-align:center;\">\u4e0b\u8f7d</p>",
+                  "fonts": [],
+                  "verticalAlign": "top",
+                  "shadow": "false",
+                  "shadowColor": "gray",
+                  "shadowOffsetX": 3,
+                  "shadowOffsetY": 3,
+                  "shadowBlur": 0,
+                  "allowScroll": "false"
+                },
+                "events": []
+              }
+            ],
+            "events": []
+          },
+          "animations": [
+            {
+              "name": "fadeIn",
+              "duration": 2.5
+            }
+          ],
+          "events": [
+            {
+              "actionType": "control",
+              "type": "tap",
+              "control": {
+                "target": "ab",
+                "action": {
+                  "id": "hide",
+                  "args": []
+                }
+              },
+              "link": {
+                "prefix": "http://",
+                "url": ""
+              },
+              "download": {
+                "ios": "",
+                "android": ""
+              }
+            }
+          ]
+        }
+      ],
+      "events": []
+    }
+  ]
+}
