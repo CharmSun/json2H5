@@ -4,7 +4,7 @@
   "description": "A H5 runtime which can render page json data to html5",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --mode development"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,7 @@
     "webpack": "^4.6.0",
     "webpack-cli": "^2.1.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "ejs-loader": "^0.3.1"
+  }
 }
