@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="<%= title %>">
+  <meta name="description" content="<%= description %>">
+  <title><%= title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="/css/swiper.min.css">
+  <link rel="stylesheet" href="/css/animate.min.css">
+  <!-- Demo styles -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html{
+      -webkit-text-size-adjust:none;
+      -webkit-tap-highlight-color: transparent;
+      overflow-x: hidden;
+      height: 100%;
+      font-size:calc(100vw/3.2);
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      height: 100%;
+    }
+    .container{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+    }
+    .loading{width: 100%;height: 100%;background-color: #eee;position: absolute; left: 0; top: 0; z-index: 999;-webkit-transition: all .7s ease-in-out; transition: all .7s ease-in-out;}
+    .progress-wrap{ width: 80%; height: 20px; border-radius: 20px; background: #fff; border: 2px solid #fff; margin: 90% auto; overflow: hidden;}
+    .progress{ width: 0; height: 100%; background: #ffc051; border-radius: 10px; -webkit-transition: width .3s ease-in-out; transition: width .3s ease-in-out;}
+    .page-elem{ position: absolute; display: block;}
+    .page-inner{ width: 100%; height: 100%; display: block;}
+    .page-inner-img{ display: block; width: 100%;}
+    .page-inner-view, .page-inner-video{ height: 100%; width: 100%;}
+  </style>
+</head>
+<body>
+
+<div class="container" id="container">
+</div>
+
+<script>var pageData = <%- pageData %>;</script>
+
+<!-- Swiper JS -->
+<script src="/js/zepto.js"></script>
+<script src="/js/swiper.min.js"></script>
+<script src="/js/swiper.animate1.0.3.min.js"></script>
+
+<script src="/js/bundle.js"></script>
+</body>
+</html>

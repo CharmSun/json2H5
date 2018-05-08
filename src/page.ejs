@@ -1,18 +1,18 @@
-<div class="swiper-container swiper-container-vertical swiper-container-android">
+<div class="swiper-container swiper-container-vertical">
     <div class="swiper-wrapper">
         <% _.forEach(pageData.pages, function(page){ %>
         <div class="swiper-slide" style="
             background-color: <%= page.background.backgroundColor %>;
-            <% if(page.background.backgroundImage){ %>background-image:url(<%= page.background.backgroundImage %>;<%}%>
+            <% if(page.background.backgroundImage){ %>background-image:url(<%= page.background.backgroundImage %>);<%}%>
             background-size: <%= page.background.backgroundSize %>;
             background-position: <%= page.background.backgroundPosition %>;"
         >
             <% _.forEach(page.component, function(element){ %>
-                <div class="page_elem ani" id="<%= element.id %>" data-type="<%= element.type %>" style="
-                    width:<%= element.style.width * 2 / 100 %>rem;
-                    height:<%= element.style.height * 2 / 100 %>rem;
+                <div class="page-elem ani" id="<%= element.id %>" data-type="<%= element.type %>" style="
+                    width:<%= element.style.width / 100 %>rem;
+                    height:<%= element.style.height / 100 %>rem;
                     left:<%= element.style.left / 320 * 100 %>%;
-                    top:<%= element.style.top / 504 * 100 %>%;
+                    top:<%= element.style.top / 480 * 100 %>%;
                     z-index:<%=element.style.zIndex%>;"
                     <%if (element.animation.name){ %>
                         swiper-animate-effect="<%= element.animation.name %>"
@@ -20,45 +20,45 @@
                         swiper-animate-delay="<%= element.animation.delay %>"
                     <%}%>
                 >
-                    <!--文本-->
                     <% if(element.type === 'text'){ %>
-                        <div class="page_inner" style="
+                        <!--文本-->
+                        <div class="page-inner" style="
                                 font-family:<%= element.style.fontFamily %>;
-                                font-size:<%= element.style.fontSize * 2 / 100 %>rem;
+                                font-size:<%= element.style.fontSize / 100 %>rem;
                                 line-height:<%= element.style.lineHeight %>;
                                 color:<%= element.style.color %>;">
                             <%= element.text %>
                         </div>
-                    <!--容器-->
                     <% } else if(element.type === 'view'){ %>
-                        <div class="page_inner_view" style="
+                        <!--容器-->
+                        <div class="page-inner-view" style="
                                 border:<%= element.style.borderWidth %>px solid <%= element.style.borderColor %>;
                                 border-radius:<%= element.style.borderRadius %>px;
                                 opacity:<%= element.style.opacity %>;
                                 background:<% if(element.style.backgroundImage){ %>url(<%=element.style.backgroundImage%>) <%=element.style.backgroundPosition%> no-repeat<%}%> <%=element.style.backgroundColor%>;
                                 background-size:<%= element.style.backgroundSize %>;">
                         </div>
-                    <!--图片-->
                     <% } else if(element.type === 'image'){ %>
-                        <div class="page_inner" style="
+                        <!--图片-->
+                        <div class="page-inner" style="
                                 border:<%= element.style.borderWidth %>px solid <%= element.style.borderColor %>;
                                 border-radius:<%= element.style.borderRadius %>px;
                                 opacity:<%= element.style.opacity %>;
                                 overflow:hidden;">
                             <% if (element.link != null){ %>
                             <a href="<%= element.link %>">
-                                <img src="<%= element.src %>" class="page_inner_img">
+                                <img src="<%= element.src %>" class="page-inner-img">
                             </a>
-                            <%} else{%>
-                            <img src="<%= element.src %>" class="page_inner_img">
+                            <% } else { %>
+                            <img src="<%= element.src %>" class="page-inner-img">
                             <%}%>
                         </div>
-                    <!--视频-->
                     <% } else if(element.type === 'video'){ %>
-                        <div class="page_inner" style="
-                                    background:<% if(element.poster){ %>}}url({{element.poster}}) no-repeat<%}%> #ddd;
+                        <!--视频-->
+                        <div class="page-inner" style="
+                                    background:<% if(element.poster){ %>}}url(<%= element.poster %>) no-repeat<%}%> #ddd;
                                     background-size:cover;">
-                            <video src="<%= element.src %>" class="page_inner_video" controls></video>
+                            <video src="<%= element.src %>" class="page-inner-video" controls></video>
                         </div>
                     <% } %>
                 </div>

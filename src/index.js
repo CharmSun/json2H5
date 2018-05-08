@@ -1,6 +1,8 @@
 var page = require('./page');
-var pageData = require('../data');
+
+if(process.env.NODE_ENV === "development"){
+    window.pageData = require('../data/data');
+}
 
 // 页面初始化
-window.pageData = pageData;
-page.init(pageData);
+page.init();

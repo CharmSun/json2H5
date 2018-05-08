@@ -3,11 +3,11 @@ var loader = require('./loader');
 
 var page = {
     // 页面渲染
-    init: function(pageData) {
-        this.render(pageData);
+    init: function() {
+        this.render();
     },
 
-    render: function(pageData) {
+    render: function() {
         var self = this;
         loader.init(function () {
             $('#container').html(pageView(pageData));

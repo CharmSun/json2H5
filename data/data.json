@@ -2,9 +2,7 @@
   "appId": "c799cdba-870d-4aa6-be43-30865eb8d2f9",
   "title": "闹元宵，唱幸福，美好刚刚开始~",
   "description": "2018元宵节VV音乐特别策划",
-  "shareImg": "/img/public/upload_cef43a358dddcfaa3e52cd1c2e2ad35a.jpg",
   "pageNumber": 7,
-  "bgMusic": "http://song.mvbox.cn/m4a/00/90328900-0.m4a",
   "pages": [
     {
       "background": {
@@ -2316,13 +2314,5 @@
         }
       }
     }
-  ],
-  "setOptions": {
-    "isOpenLikes": true,
-    "isOpenCmt": true,
-    "isOpenLook": true,
-    "isShowLayer": true
-  },
-  "likesCount": 25,
-  "readCount": 845
+  ]
 }
